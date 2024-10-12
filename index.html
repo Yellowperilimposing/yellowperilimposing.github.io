@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин электроники</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      /* Material Design стили */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      header {
+        background-color: white;
+        color: black;
+        padding: 16px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        left: 16px;
+      }
+
+      .logo .material-icons {
+        margin-right: 8px;
+      }
+
+      .request-button {
+        background-color: rgba(98, 0, 234, 0.8);
+        color: white;
+        padding: 10px 16px;
+        border-radius: 24px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-left: 16px;
+      }
+
+      .request-button:hover {
+        background-color: rgba(55, 0, 179, 1);
+      }
+
+      main {
+        padding: 80px 16px 16px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .product {
+        background-color: white;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 32px;
+      }
+
+      .product-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 16px;
+        display: block;
+      }
+
+      .product-title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+
+      .price {
+        font-size: 20px;
+        font-weight: 700;
+        color: #6200ea;
+        margin-bottom: 8px;
+      }
+
+      .country {
+        font-size: 16px;
+        color: #757575;
+        margin-bottom: 16px;
+      }
+
+      .description {
+        font-size: 16px;
+        margin-bottom: 16px;
+        color: #424242;
+      }
+
+      .specs h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: #424242;
+      }
+
+      .specs ul {
+        padding-left: 16px;
+      }
+
+      .specs li {
+        font-size: 16px;
+        color: #424242;
+        margin-bottom: 4px;
+      }
+
+      .fixed-buttons {
+        position: fixed;
+        bottom: 116px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        z-index: 100;
+        gap: 8px;
+      }
+
+      .fab {
+        background-color: #6200ea;
+        color: white;
+        width: 300px;
+        padding: 16px;
+        border-radius: 32px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        margin: 0 auto;
+      }
+
+      .fab .material-icons {
+        margin-right: 8px;
+        font-size: 24px;
+      }
+
+      .fab:hover {
+        background-color: #3700b3;
+      }
+
+      .cart-button {
+        display: none;
+        background-color: #6200ea;
+        color: white;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .cart-button span {
+        font-size: 18px;
+      }
+
+      footer {
+        background-color: #6200ea;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        position: relative;
+        margin-top: 32px;
+      }
+
+      footer p,
+      footer a {
+        color: white;
+        font-size: 14px;
+        margin: 0;
+        text-decoration: none;
+      }
+
+      footer .socials a {
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="material-icons">storefront</span>
+        Банкси
+      </div>
+      <button class="request-button">Заявка на выкуп</button>
+    </header>
+
+    <main>
+      <div class="product">
+        <img src="optimize.webp" alt="iPhone 16" class="product-image" />
+        <h2 class="product-title">iPhone 16</h2>
+        <p class="price">Цена: 120 000 руб.</p>
+        <p class="country">Страна доставки: США</p>
+        <p class="description">
+          Новый iPhone 16 продолжает инновационные традиции Apple, предлагая
+          улучшенные камеры, мощный процессор A18 и супербыстрый дисплей
+          ProMotion 120 Гц. Смартфон поддерживает 5G, имеет встроенную систему
+          искусственного интеллекта для улучшения фотографий и автономной
+          работы. Оснащён более мощной батареей, обеспечивающей до 25 часов
+          активного использования.
+        </p>
+        <div class="specs">
+          <h3>Характеристики</h3>
+          <ul>
+            <li>Дисплей: 6.7 дюймов, OLED, ProMotion 120 Гц</li>
+            <li>Процессор: A18 Bionic</li>
+            <li>Оперативная память: 8 ГБ</li>
+            <li>Хранение: 256/512 ГБ, 1 ТБ</li>
+            <li>
+              Камера: 48 МП (основная), 12 МП (ультраширокоугольная), 12 МП
+              (телефото)
+            </li>
+            <li>Поддержка 5G, Wi-Fi 6E</li>
+            <li>Батарея: 5000 мАч, быстрая зарядка 30 Вт</li>
+            <li>Операционная система: iOS 18</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <div class="fixed-buttons">
+      <button id="add-to-cart" class="fab">
+        <span class="material-icons">add_shopping_cart</span>
+        Добавить
+      </button>
+      <button id="cart-button" class="cart-button">
+        <span class="material-icons">shopping_cart</span>
+        <span id="cart-count">0</span>
+      </button>
+    </div>
+
+    <footer>
+      <p>Дополнительная информация</p>
+      <div class="socials">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </div>
+    </footer>
+
+    <script>
+      let cartCount = 0;
+
+      document
+        .getElementById("add-to-cart")
+        .addEventListener("click", function () {
+          // Уменьшаем кнопку "Добавить"
+          this.style.transform = "scale(0.8)";
+          setTimeout(() => (this.style.transform = "scale(1)"), 200);
+
+          // Увеличиваем счетчик товаров в корзине
+          cartCount++;
+          document.getElementById("cart-count").innerText = cartCount;
+
+          // Показываем кнопку корзины
+          const cartButton = document.getElementById("cart-button");
+          if (
+            cartButton.style.display === "none" ||
+            cartButton.style.display === ""
+          ) {
+            cartButton.style.display = "flex"; // Используем 'flex' для выравнивания и показа кнопки
+          }
+        });
+
+      // Добавляем обработчик нажатия на кнопку корзины
+      document
+        .getElementById("cart-button")
+        .addEventListener("click", function () {
+          // Переход на страницу корзины
+          window.location.href = "Корзина.html";
+        });
+    </script>
+  </body>
+</html>
