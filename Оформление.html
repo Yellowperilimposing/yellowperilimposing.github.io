@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление заказа</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      /* Подключение шрифтов Material Design */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      /* Стили шапки */
+      header {
+        background-color: white;
+        color: black;
+        padding: 12px 24px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .logo .material-icons {
+        margin-right: 8px;
+        font-size: 28px;
+      }
+
+      /* Контейнер для основной части */
+      .container {
+        padding: 100px 16px 16px;
+        max-width: 1000px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+
+      .product {
+        background-color: white;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 32px;
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #555;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #dcdcdc;
+        border-radius: 8px;
+        background-color: #f0f4f7;
+        transition: border 0.3s ease;
+        box-sizing: border-box;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        border-color: #6200ea;
+        background-color: white;
+      }
+
+      .fab {
+        background-color: #6200ea;
+        color: white;
+        width: 100%;
+        padding: 16px;
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .fab .material-icons {
+        margin-right: 8px;
+        font-size: 24px;
+      }
+
+      .fab:hover {
+        background-color: #3700b3;
+      }
+
+      footer {
+        background-color: #6200ea;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        position: relative;
+        margin-top: 32px;
+      }
+
+      footer p,
+      footer a {
+        color: white;
+        font-size: 14px;
+        margin: 0;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="material-icons">storefront</span>
+        Банкси
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="product">
+        <h2>Оформление заказа</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="lastname">Фамилия</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </div>
+          <div class="form-group">
+            <label for="firstname">Имя</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </div>
+          <div class="form-group">
+            <label for="middlename">Отчество</label>
+            <input type="text" id="middlename" name="middlename" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="passport">Паспортные данные</label>
+            <input type="text" id="passport" name="passport" required />
+          </div>
+          <div class="form-group">
+            <label for="inn">ИНН</label>
+            <input type="text" id="inn" name="inn" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Адрес доставки</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <button type="submit" class="fab">
+            <span class="material-icons">check_circle</span>
+            Оформить заказ
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Дополнительная информация</p>
+      <div class="socials">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>
