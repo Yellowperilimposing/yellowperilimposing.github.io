@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Выбор банка для оплаты</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      .container {
+        text-align: center;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .button {
+        display: block;
+        width: 300px; /* увеличенная ширина */
+        margin: 10px auto;
+        padding: 15px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .alfabank {
+        background-color: red;
+      }
+      .tbank {
+        background-color: rgba(255, 255, 8, 0.967);
+        color: black;
+      }
+      .sberbank {
+        background-color: rgba(0, 239, 0, 0.94);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Выберите банк для оплаты</h1>
+      <a href="Оплата.html" class="button alfabank">Альфа банк</a>
+      <a href="Оплата.html" class="button tbank">Т-БАНК</a>
+      <a href="Оплата.html" class="button sberbank">Сбербанк</a>
+    </div>
+  </body>
+</html>

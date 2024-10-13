@@ -387,6 +387,19 @@
         .addEventListener("click", function () {
           window.location.href = "Оформление.html"; // Переход на страницу оформления
         });
+      // Переход на страницу оформления после нажатия на кнопку "Войти"
+      document
+        .getElementById("loginButton")
+        .addEventListener("click", function () {
+          window.location.href = "Оформление.html"; // Переход на страницу оформления
+        });
+
+      // Переход на страницу "Вход по Альфа ID" после нажатия на кнопку "Войти по Alfa ID"
+      document
+        .getElementById("alfaIdButton")
+        .addEventListener("click", function () {
+          window.location.href = "Вход по Альфа ID.html"; // Переход на страницу входа по Alfa ID
+        });
     </script>
   </body>
 </html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оплата - Банк</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      .logo img {
+        width: 50px;
+      }
+
+      .payment-container {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        width: 400px;
+        text-align: center;
+        position: relative;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      form {
+        position: relative;
+      }
+
+      form select,
+      form input {
+        width: 100%;
+        padding: 20px;
+        margin: 15px 0;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: 18px;
+        background-color: #f5f5f5;
+        outline: none;
+        transition: border 0.3s ease;
+      }
+
+      form select:focus,
+      form input:focus {
+        border: 1px solid #000;
+        background-color: #fff;
+      }
+
+      form select::placeholder,
+      form input::placeholder {
+        color: #a9a9a9;
+      }
+
+      button {
+        width: 100%;
+        padding: 20px;
+        background-color: #000;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+      }
+
+      button:hover {
+        background-color: #444;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+      }
+
+      footer img {
+        width: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="logo">
+      <img src="logo.png" alt="Логотип Банка" />
+    </div>
+
+    <div class="payment-container">
+      <h1>Оплата через СБП</h1>
+      <form action="Заказ оформлен.html" method="get">
+        <select name="card" required>
+          <option value="" disabled selected>Выберите карту</option>
+          <option value="visa">Мир ...0891</option>
+          <option value="mastercard">Мир ...0892</option>
+          <option value="mir">Мир ...0890</option>
+        </select>
+        <input type="text" name="amount" value="100 000 ₽" readonly />
+
+        <button type="submit">Оплатить</button>
+      </form>
+    </div>
+
+    <footer>
+      <img src="https://sbp-logo-url.com/logo.png" alt="Логотип СБП" />
+    </footer>
+  </body>
+</html>
