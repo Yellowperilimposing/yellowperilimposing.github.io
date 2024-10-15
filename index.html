@@ -22,7 +22,7 @@
       header {
         background-color: white;
         color: black;
-        padding: 16px;
+        padding: 10px;
         position: fixed;
         top: 0;
         width: 100%;
@@ -31,6 +31,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 45px; /* Установим фиксированную высоту */
       }
 
       .logo {
@@ -44,22 +45,6 @@
 
       .logo .material-icons {
         margin-right: 8px;
-      }
-
-      .request-button {
-        background-color: rgba(98, 0, 234, 0.8);
-        color: white;
-        padding: 10px 16px;
-        border-radius: 24px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-        margin-left: 16px;
-      }
-
-      .request-button:hover {
-        background-color: rgba(55, 0, 179, 1);
       }
 
       main {
@@ -211,15 +196,14 @@
         <span class="material-icons">storefront</span>
         Банкси
       </div>
-      <button class="request-button">Заявка на выкуп</button>
     </header>
 
     <main>
       <div class="product">
         <img src="optimize.webp" alt="iPhone 16" class="product-image" />
         <h2 class="product-title">iPhone 16</h2>
-        <p class="price">Цена: 120 000 руб.</p>
-        <p class="country">Страна доставки: США</p>
+        <p class="price">Цена: 100 000 руб.</p>
+        <p class="country">Доставляется из: ОАЭ</p>
         <p class="description">
           Новый iPhone 16 продолжает инновационные традиции Apple, предлагая
           улучшенные камеры, мощный процессор A18 и супербыстрый дисплей
@@ -234,7 +218,7 @@
             <li>Дисплей: 6.7 дюймов, OLED, ProMotion 120 Гц</li>
             <li>Процессор: A18 Bionic</li>
             <li>Оперативная память: 8 ГБ</li>
-            <li>Хранение: 256/512 ГБ, 1 ТБ</li>
+            <li>Память: 256 ГБ</li>
             <li>
               Камера: 48 МП (основная), 12 МП (ультраширокоугольная), 12 МП
               (телефото)
@@ -260,9 +244,7 @@
 
     <footer>
       <p>Дополнительная информация</p>
-      <div class="socials">
-        <a href="#">Facebook</a> | <a href="#">Instagram</a>
-      </div>
+      <div class="socials"><a href="#">VK</a> | <a href="#">Дзен</a></div>
     </footer>
 
     <script>
@@ -294,7 +276,7 @@
         .getElementById("cart-button")
         .addEventListener("click", function () {
           // Переход на страницу корзины
-          window.location.href = "Корзина.html";
+          window.location.href = "Корзина.html"; // Страница корзины, куда произойдет переход
         });
     </script>
   </body>

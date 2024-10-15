@@ -274,7 +274,7 @@
     <header>
       <div class="logo">
         <span class="material-icons">storefront</span>
-        Магазин
+        Банкси
       </div>
     </header>
 
@@ -283,12 +283,12 @@
       <div class="cart-item">
         <img src="optimize.webp" alt="iPhone 16" />
         <div class="cart-item-info">
-          <h2>iPhone 16 Pro Max, 256 ГБ</h2>
+          <h2>iPhone 16, 256 ГБ</h2>
           <p>Цвет: Desert Titanium</p>
           <p>+769 баллов</p>
         </div>
         <div class="price">
-          153 800 ₽
+          100 000 ₽
           <div class="quantity-controls">
             <button class="quantity-button" id="decrease">-</button>
             <div class="quantity-display" id="quantity">1</div>
@@ -297,7 +297,7 @@
         </div>
       </div>
 
-      <div class="total" id="total">Итого: 153 800 ₽</div>
+      <div class="total" id="total">Итого: 100 000 ₽</div>
     </main>
 
     <button class="checkout-button" id="checkoutButton">
@@ -307,9 +307,7 @@
 
     <footer>
       <p>Дополнительная информация</p>
-      <div class="socials">
-        <a href="#">Facebook</a> | <a href="#">Instagram</a>
-      </div>
+      <div class="socials"><a href="#">VK</a> | <a href="#">Дзен</a></div>
     </footer>
 
     <!-- Модальное окно -->
@@ -326,7 +324,7 @@
           required
         />
         <button id="loginButton">Войти</button>
-        <button id="alfaIdButton">Войти по Alfa ID</button>
+        <button id="alfaIdButton">Войти по Альфа ID</button>
       </div>
     </div>
 
@@ -334,7 +332,7 @@
       // Логика для управления количеством товаров
       const quantityDisplay = document.getElementById("quantity");
       const totalDisplay = document.getElementById("total");
-      const pricePerItem = 153800; // Цена за один товар
+      const pricePerItem = 100000; // Цена за один товар
 
       document
         .getElementById("increase")

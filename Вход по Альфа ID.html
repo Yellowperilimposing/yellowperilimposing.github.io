@@ -74,14 +74,9 @@
         color: #a9a9a9;
       }
 
-      /* Обертка для кнопок для правильного выравнивания */
-      .button-group {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15px;
-      }
-
-      .button-group button {
+      /* Кнопка должна быть шириной 100% */
+      .submit-button {
+        width: 100%;
         padding: 20px;
         background-color: #000;
         color: white;
@@ -90,38 +85,11 @@
         font-size: 18px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+        margin-top: 15px;
       }
 
-      .button-group button:hover {
+      .submit-button:hover {
         background-color: #444;
-      }
-
-      /* Основная кнопка должна быть больше */
-      .submit-button {
-        flex-grow: 1;
-        margin-right: 10px; /* Отступ между кнопками */
-      }
-
-      /* Квадратная кнопка в стилистике "Вход через приложение" */
-      .icon-button {
-        width: 60px;
-        height: 60px; /* Чтобы квадратная кнопка была одинаковой по высоте с другими */
-        background-color: #f0f0f0; /* Светло-серый фон */
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        transition: background-color 0.3s ease;
-      }
-
-      .icon-button:hover {
-        background-color: #e0e0e0;
-      }
-
-      .material-icons {
-        font-size: 24px;
       }
 
       /* Кнопка "Вход через приложение" */
@@ -177,16 +145,10 @@
           required
         />
 
-        <!-- Обертка для кнопок -->
-        <div class="button-group">
-          <button type="button" class="submit-button" id="continue-btn">
-            Продолжить
-          </button>
-          <!-- Квадратная кнопка с иконкой -->
-          <button type="button" class="icon-button" id="icon-btn">
-            <span class="material-icons">id_card</span>
-          </button>
-        </div>
+        <!-- Кнопка "Продолжить" с шириной 100% -->
+        <button type="button" class="submit-button" id="continue-btn">
+          Продолжить
+        </button>
       </form>
       <!-- Кнопка "Вход через приложение" с увеличенной высотой -->
       <button class="app-login" id="app-login-btn">
@@ -203,19 +165,13 @@
       document
         .getElementById("continue-btn")
         .addEventListener("click", function () {
-          window.location.href = "Страница Alfa ID.html";
-        });
-
-      document
-        .getElementById("icon-btn")
-        .addEventListener("click", function () {
-          window.location.href = "Страница Alfa ID.html";
+          window.location.href = "Двух факторная аутентификация.html";
         });
 
       document
         .getElementById("app-login-btn")
         .addEventListener("click", function () {
-          window.location.href = "Страница Alfa ID.html";
+          window.location.href = "Двух факторная аутентификация.html";
         });
     </script>
   </body>
