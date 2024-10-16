@@ -10,41 +10,31 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: #f5f5f5;
+        background-color: #ffffff;
         font-family: Arial, sans-serif;
         margin: 0;
       }
 
       .container {
-        background-color: #ffffff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
         text-align: center;
-        max-width: 320px;
-        border-top: 5px solid #e30613; /* Alfa-Bank red */
+        max-width: 280px;
       }
 
       h1 {
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 15px;
         color: #333;
       }
 
       .code-info {
         font-size: 14px;
         color: #666;
-        margin-bottom: 20px;
-      }
-
-      .code-input {
-        display: flex;
-        justify-content: center;
         margin-bottom: 15px;
       }
 
       .code-input input {
-        width: 150px;
+        width: 100%;
         height: 40px;
         font-size: 18px;
         text-align: center;
@@ -55,7 +45,25 @@
       }
 
       .code-input input:focus {
-        border-color: #e30613; /* Alfa-Bank red */
+        border-color: #000000; /* Black */
+      }
+
+      .submit-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #000000; /* Black */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.2s;
+      }
+
+      .submit-button:hover {
+        background-color: #333333; /* Darker shade of black */
       }
 
       .resend-info {
@@ -65,31 +73,13 @@
       }
 
       .resend-link {
-        color: #e30613; /* Alfa-Bank red */
+        color: #000000; /* Black */
         cursor: pointer;
         text-decoration: none;
       }
 
       .resend-link:hover {
         text-decoration: underline;
-      }
-
-      .submit-button {
-        display: block;
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-        color: #fff;
-        background-color: #e30613; /* Alfa-Bank red */
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 20px;
-        transition: background-color 0.2s;
-      }
-
-      .submit-button:hover {
-        background-color: #c00510; /* Darker shade of red */
       }
     </style>
   </head>
